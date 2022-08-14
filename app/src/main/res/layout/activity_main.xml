@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="15dp"
+                android:layout_alignParentLeft="true"
+                android:src="@drawable/leftarrow"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginTop="25dp"
+                android:layout_alignParentLeft="true"
+                android:text="Profile For NOBANNO Agent"
+                android:textSize="20dp"
+                android:gravity="center"
+                android:textColor="#666565"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="15dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <com.mikhaellopez.circularimageview.CircularImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/henry">
+
+        </com.mikhaellopez.circularimageview.CircularImageView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Henry Cavill"
+            android:layout_marginTop="15dp"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:textColor="#555658">
+        </TextView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="(+880) 017XX-XXX-XXX"
+            android:layout_marginTop="5dp"
+            android:textSize="13dp"
+            android:gravity="center"
+            android:textColor="#8E8E8E">
+        </TextView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="#0001111"
+            android:layout_marginTop="5dp"
+            android:textSize="13dp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textColor="#90AA93">
+        </TextView>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="45dp"
+        android:paddingRight="15dp"
+        android:paddingLeft="15dp">
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/map"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="15dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ADDRESS:"
+            android:textColor="#1E1E1E"
+            android:textSize="14dp"
+            android:layout_marginLeft="5dp"
+            android:textStyle="bold">
+        </TextView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="100dp"
+        >
+
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:paddingRight="40dp"
+            android:text="Rupayan Prime, Suite-A10, House-2 Rd No. 7, Dhaka 1205, Bangladesh"
+            android:textColor="#666565"
+            android:textSize="14dp">
+
+        </TextView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="69dp"
+        android:gravity="right"
+        android:layout_marginTop="100dp">
+
+        <com.google.android.material.button.MaterialButton
+            style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:backgroundTint="#748B6C"
+            app:icon="@drawable/ic_baseline_check_24"
+            app:iconTint="@color/white"
+            android:layout_gravity="center"
+            app:cornerRadius="28dp"
+            android:layout_marginRight="40dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="bottom">
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:menu="@menu/bottom_nav_menu"
+            app:labelVisibilityMode="unlabeled"
+            app:itemIconSize="25dp"
+            android:elevation="50dp"
+            android:background="@drawable/shadow"/>
+    </LinearLayout>
+
+
+</LinearLayout>
